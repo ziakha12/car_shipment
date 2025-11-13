@@ -9,7 +9,7 @@ export default function RegisterPage() {
     phone: "",
     password: "",
     confirm: "",
-  });
+  }); 
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

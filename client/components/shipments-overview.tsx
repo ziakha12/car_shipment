@@ -12,7 +12,7 @@ const stats = [
     value: "156",
     icon: "✓",
     color: "from-green-500 to-green-600",
-  },
+  }, 
   {
     label: "In Progress",
     value: "12",

@@ -10,10 +10,7 @@ export default function Home() {
 
   return (
     <div className="flex h-screen bg-background">
-      {/* Sidebar */}
-      <Sidebar open={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
-
-      {/* Main Content */}
+      <Sidebar open={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} /> 
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
         <DashboardContent />

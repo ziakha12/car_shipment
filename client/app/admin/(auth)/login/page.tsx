@@ -7,7 +7,7 @@ export default function LoginPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Login Data:", form);
+    console.log("Login Da ta:", form);
   };
 
   return (

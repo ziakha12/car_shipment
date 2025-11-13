@@ -11,7 +11,7 @@ const consignees = [
   },
   {
     id: 2,
-    name: "Jane Smith",
+    name: "Jane Smith", 
     avatar: "👩‍💼",
     role: "Driver",
     shipments: 3,

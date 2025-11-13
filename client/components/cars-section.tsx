@@ -8,7 +8,7 @@ const cars = [
     status: "In Service",
     driver: "John Doe",
     fuel: "Electric",
-  },
+  }, 
   {
     id: "CAR002",
     model: "BMW X5",

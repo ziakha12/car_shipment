@@ -11,7 +11,7 @@ export function Header({ onMenuClick }: HeaderProps) {
         <button onClick={onMenuClick} className="md:hidden p-2 hover:bg-muted rounded-lg text-lg">
           ☰
         </button>
-        <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
+        <h1 className="text-2xl font-bold text-foreground">Dashboard</h1> 
       </div>
 
       <div className="flex items-center gap-4">

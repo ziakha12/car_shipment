@@ -9,7 +9,7 @@ const shipments = [
     status: "In Transit",
     consignee: "John Doe",
     progress: 65,
-  },
+  }, 
   {
     id: "SHP002",
     car: "BMW X5",

@@ -13,7 +13,7 @@ export function DashboardContent() {
     { id: "overview", label: "Shipments" },
     { id: "cars", label: "Cars" },
     { id: "consignees", label: "Consignees" },
-  ]
+  ] 
 
   return (
     <main className="flex-1 overflow-y-auto bg-background">

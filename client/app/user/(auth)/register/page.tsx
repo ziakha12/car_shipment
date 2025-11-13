@@ -12,7 +12,7 @@ export default function RegisterPage() {
   });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault(); 
     console.log("Register Data:", form);
   };
 

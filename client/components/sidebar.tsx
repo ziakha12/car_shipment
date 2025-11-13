@@ -7,7 +7,7 @@ interface SidebarProps {
   open: boolean
   onToggle: () => void
 }
-
+ 
 const navItems = [
   { label: "Shipments", href: "#", icon: "📦" },
   { label: "Cars", href: "#", icon: "🚗" },
