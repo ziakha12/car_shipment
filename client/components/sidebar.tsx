@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 interface SidebarProps {
   open: boolean
@@ -9,11 +10,11 @@ interface SidebarProps {
 }
  
 const navItems = [
-  { label: "Shipments", href: "#", icon: "📦" },
-  { label: "Cars", href: "#", icon: "🚗" },
-  { label: "Consignees", href: "#", icon: "👥" },
-  { label: "Users", href: "#", icon: "👤" },
-  { label: "Routes", href: "#", icon: "🗺️" },
+  { label: "Shipments", href: "/user/dashboard/", icon: "📦" },
+  { label: "Cars", href: "/user/dashboard/", icon: "🚗" },
+  { label: "Consignees", href: "/user/dashboard/consignee", icon: "👥" },
+  { label: "Users", href: "/user/dashboard/", icon: "👤" },
+  { label: "Routes", href: "/user/dashboard/", icon: "🗺️" },
 ]
 
 export function Sidebar({ open, onToggle }: SidebarProps) {
@@ -49,9 +50,10 @@ export function Sidebar({ open, onToggle }: SidebarProps) {
         {/* Navigation */}
         <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
           {navItems.map((item) => (
-            <button
+            <Link
+            href={item.href}
               key={item.label}
-              onClick={() => setActiveItem(item.label)}
+              onClick={()=> setActiveItem(item.label)}
               className={cn(
                 "w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors",
                 activeItem === item.label
@@ -61,7 +63,7 @@ export function Sidebar({ open, onToggle }: SidebarProps) {
             >
               <span className="text-lg flex-shrink-0">{item.icon}</span>
               {open && <span className="text-sm">{item.label}</span>}
-            </button>
+            </Link>
           ))}
         </nav>
 

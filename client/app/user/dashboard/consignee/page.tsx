@@ -165,7 +165,6 @@ const [formData, setFormData] = useState({
                 value={formData.consigneeAddress}
                 onChange={handleChange}
                 className="w-full border rounded-md p-2"
-                rows="3"
                 required
               />
             </div>
@@ -179,7 +178,7 @@ const [formData, setFormData] = useState({
                 value={formData.notifyAddress}
                 onChange={handleChange}
                 className="w-full border rounded-md p-2"
-                rows="3"
+                
               />
             </div>
 
