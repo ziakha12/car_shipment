@@ -174,15 +174,15 @@ export default function page() {
   return (
     <main className="flex-1 p-6 bg-gray-50">
       <div className="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-sm border ">
-        <h1 className="text-2xl font-semibold mb-6 text-center">Add Vehicle Listing</h1>
+        <h1 className="text-2xl font-semibold mb-6 text-center ">Add Vehicle Listing</h1>
 
-        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6   ">
 
           {/* CATEGORY */}
-          <div className="col-span-2 md:col-span-1 ">
-            <label className="form-label font-semibold block ">Category: </label>
+          <div className="col-span-2 md:col-span-1  ">
+            <label className="form-label font-semibold block  ">Category:  </label>
             <select
-              className="form-input w-full mt-2 text-sm border-2 rounded-md  px-1 py-2 "
+              className="form-input w-full mt-2 text-sm border-2 rounded-md px-1 py-2  "
               value={selected.category}
               onChange={(e) => handleSelect("category", e.target.value)}
             >
@@ -196,10 +196,10 @@ export default function page() {
           </div>
 
           {/* TYPE */}
-          <div className="col-span-2 md:col-span-1 ">
-            <label className="form-label font-semibold block ">Type:</label>
+          <div className="col-span-2 md:col-span-1  ">
+            <label className="form-label font-semibold block  ">Type: </label>
             <select
-              className="form-input w-full  mt-2 text-sm border-2 rounded-md  px-1 py-2 "
+              className="form-input w-full  mt-2 text-sm border-2 rounded-md px-1 py-2  "
               value={selected.type}
               onChange={(e) => handleSelect("type", e.target.value)}
             >
@@ -214,9 +214,9 @@ export default function page() {
 
           {/* MAKE */}
           <div>
-            <label className="form-label font-semibold block ">Make: </label>
+            <label className="form-label font-semibold block  ">Make:  </label>
             <select
-              className="form-input w-full  mt-2 text-sm border-2 rounded-md  px-1 py-2 "
+              className="form-input w-full  mt-2 text-sm border-2 rounded-md px-1 py-2  "
               value={selected.make}
               onChange={(e) => handleSelect("make", e.target.value)}
             >
@@ -230,10 +230,10 @@ export default function page() {
           </div>
 
           {/* MODEL */}
-          <div className="col-span-2 md:col-span-1 ">
-            <label className="form-label font-semibold block ">Model:</label>
+          <div className="col-span-2 md:col-span-1  ">
+            <label className="form-label font-semibold block  ">Model: </label>
             <select
-              className="form-input w-full  mt-2 text-sm border-2 rounded-md p-2t px-1 py-2 "
+              className="form-input w-full  mt-2 text-sm border-2 rounded-md px-1 py-2  "
               value={selected.model}
               onChange={(e) => handleSelect("model", e.target.value)}
             >
@@ -248,9 +248,9 @@ export default function page() {
 
           {/* Feature Category */}
           <div className="col-span-2">
-            <label className="form-label font-semibold block ">Feature Category:</label>
+            <label className="form-label font-semibold block  ">Feature Category: </label>
             <select
-              className="form-input w-full text-sm border-2 rounded-md mt-2 px-1 py-2 "
+              className="form-input w-full text-sm border-2 rounded-md mt-2 px-1 py-2  "
               value={selected.featureCategory}
               onChange={(e) =>
                 handleSelect("featureCategory", e.target.value)
@@ -265,7 +265,7 @@ export default function page() {
             </select>
 
             {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-3 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-3  ">
               {filteredFeatures.map((f : any) => (
                 <label key={f.id} className="flex items-center gap-2">
                   <input
@@ -280,11 +280,11 @@ export default function page() {
           </div>
 
           {/* Extra fields */}
-          <div className="col-span-2 md:col-span-1 ">
-            <label className="form-label font-semibold block ">Price:</label>
+          <div className="col-span-2 md:col-span-1  ">
+            <label className="form-label font-semibold block  ">Price: </label>
             <input
               type="number"
-              className="form-input w-full  mt-2 text-sm border-2 rounded-md  px-1 py-2 "
+              className="form-input w-full  mt-2 text-sm border-2 rounded-md  px-1 py-2  "
               value={extra.price}
               placeholder={'Select Price'}
               onChange={(e) => setExtra({ ...extra, price: e.target.value })}
@@ -292,10 +292,10 @@ export default function page() {
           </div>
 
           <div className="col-span-2 md:col-span-1 ">
-            <label className="form-label block font-semibold ">Title:</label>
+            <label className="form-label block font-semibold  ">Title: </label>
             <input
               type="text"
-              className="form-input w-full mt-2 text-sm border-2 rounded-md  px-1 py-2 "
+              className="form-input w-full mt-2 text-sm border-2 rounded-md  px-1 py-2  "
               value={extra.title}
               placeholder="Enter a Title"
               onChange={(e) => setExtra({ ...extra, title: e.target.value })}
@@ -303,21 +303,21 @@ export default function page() {
           </div>
 
           {/* Uploads */}
-          <div className="col-span-2 md:col-span-1 ">
-            <label className="form-label block font-semibold ">Featured Image:</label>
+          <div className="col-span-2 md:col-span-1   ">
+            <label className="form-label block font-semibold  ">Featured Image: </label>
             <input
               type="file"
-              className="form-input w-full mt-2 text-sm border-2 rounded-md px-1 py-2 "
+              className="form-input w-full mt-2 text-sm border-2 rounded-md px-1 py-2  "
               onChange={(e : any) => setFeaturedImage(e.target.files[0])}
             />
           </div>
 
-          <div className="col-span-2 md:col-span-1 ">
-            <label className="font-semibold form-label block ">Gallery Images:</label>
+          <div className="col-span-2 md:col-span-1   ">
+            <label className="font-semibold form-label block  ">Gallery Images: </label>
             <input
               type="file"
               multiple
-              className="form-input w-full mt-2 text-sm border-2 rounded-md  px-1 py-2 "
+              className="form-input w-full mt-2 text-sm border-2 rounded-md  px-1 py-2   "
               onChange={(e) => setGalleryImages([...e.target.files])}
             />
           </div>
